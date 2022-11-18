@@ -1,2 +1,3 @@
-# chrom-landing-page
-A copy of momentum chrome extension
+# Momentum chrome
+
+A copy of momentum extension
