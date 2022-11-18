@@ -44,10 +44,41 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.momentum-time {
+  font-size: 9.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.momentum-greeting {
+  font-size: 4.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.momentum-text {
+  font-size: 3.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.momentum-focus {
+  font-size: 3.6rem;
+  display: inline-block;
+}
+
 .momentum-quote {
   position: absolute;
   bottom: 1%;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
+}
+
+.quote-text {
+  font-size: 1.6rem;
+}
+
+.quote-author {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
 }
