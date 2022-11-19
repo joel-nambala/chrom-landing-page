@@ -12,11 +12,14 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f4f5f7;
+  color: #fff;
 }
 
 .momentum {
   height: 100vh;
   padding: 2rem 3rem;
+  background-position: center;
+  background-size: cover;
 }
 
 .momentum-nav {
