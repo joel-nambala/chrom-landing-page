@@ -13,7 +13,6 @@ const weatherTemp = document.querySelector('.weather-temp');
 const weatherIcon = document.querySelector('.weather-icon');
 
 class App {
-  #today = new Date();
   #API_KEY = 'a55da39139ac651b32e5cef13ec51ae4';
 
   constructor() {
@@ -47,11 +46,14 @@ class App {
 
   // Set the time method
   #setTime() {
-    // 1. Format the time
+    // Get the current time
+    const today = new Date();
+
+    // Format the time
     const formatTime = new Intl.DateTimeFormat('en-US', {
       hour: '2-digit',
       minute: '2-digit',
-    }).format(this.#today);
+    }).format(today);
 
     // 2. Append the time to the UI
     momentumTime.textContent = formatTime;
@@ -59,7 +61,8 @@ class App {
 
   // Change greeting
   #greeting() {
-    const hour = this.#today.getHours();
+    const today = new Date();
+    const hour = today.getHours();
 
     if (hour < 12) {
       // Good morning
